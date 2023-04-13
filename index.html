@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <!-- hero section -->
+    <div id="hero-container">
+      <!-- <div id="hero-body"> -->
+      <h1 id="hero-title">Metric/Imperial Unit Conversion</h1>
+      <input type="text" id="input-unit-value" pattern="\d*" maxlength="5" />
+      <!-- <button id="convert-btn">Convert</button> -->
+      <!-- </div> -->
+    </div>
+
+    <!-- main body section -->
+    <div id="main-container">
+      <div class="unit-container">
+        <h1 class="unit-title">Length (Meter/Feet)</h1>
+        <p class="unit-conversion-info" id="unit-conversion-length">-</p>
+      </div>
+      <div class="unit-container">
+        <h1 class="unit-title">Volume (Liters/Gallons)</h1>
+        <p class="unit-conversion-info" id="unit-conversion-volume">-</p>
+      </div>
+      <div class="unit-container" id="last-unit-container">
+        <h1 class="unit-title">Mass (Kilograms/Pounds)</h1>
+        <p class="unit-conversion-info" id="unit-conversion-mass">-</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
